@@ -1,16 +1,178 @@
-# React + Vite
+# 🚀 Touch Typing Trainer (React + Redux)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web-based touch typing practice application focused on improving typing speed and accuracy using muscle memory.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Overview
 
-## React Compiler
+This application helps users practice touch typing using a limited set of keys:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+asdfjkl;
+```
 
-## Expanding the ESLint configuration
+Each key is mapped to specific fingers, helping users build muscle memory and improve typing efficiency over time.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+### ✅ Must Have
+
+* ⌨️ Typing input box
+* 🎯 Highlight next key to press
+* ⏱️ 5-minute practice timer
+* 📊 Accuracy calculation (%)
+* 🔢 Total & correct keystrokes tracking
+
+### ⭐ Nice to Have
+
+* ⚛️ State management using Redux Toolkit
+* 🎨 Clean UI with Tailwind CSS
+* 🔁 Dynamic key sequence generation
+* ⚡ Real-time feedback
+
+---
+
+## 🧠 Thought Process
+
+The application is designed keeping multiple user scenarios in mind:
+
+### 👤 Beginner Users
+
+* Focus on limited keys (`asdfjkl;`)
+* Visual guidance via highlighted keys
+
+### ⚡ Intermediate Users
+
+* Improve speed through continuous typing
+* Accuracy tracking helps identify mistakes
+
+### 🏁 Advanced Users
+
+* Practice under time constraints (5 min)
+* Improve consistency and muscle memory
+
+---
+
+## 🏗️ Tech Stack
+
+* ⚛️ React (Vite)
+* 🧠 Redux Toolkit
+* 🎨 Tailwind CSS
+* 📦 JavaScript (ES6+)
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+│
+├── app/
+│   └── store.js
+│
+├── features/
+│   └── typing/
+│       └── typingSlice.js
+│
+├── components/
+│   ├── TypingBox.jsx
+│   ├── Keyboard.jsx
+│   ├── Stats.jsx
+│   ├── Timer.jsx
+│
+├── utils/
+│   └── generateKeys.js
+│
+├── App.jsx
+├── main.jsx
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/your-username/touch-typing-app.git
+cd touch-typing-app
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run Application
+
+```bash
+npm run dev
+```
+
+App will run on:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🧮 How It Works
+
+* A random sequence of keys is generated
+* User types using keyboard input
+* System checks:
+
+  * ✔ Correct key
+  * ❌ Incorrect key
+* Metrics calculated:
+
+  * Total keystrokes
+  * Correct keystrokes
+  * Accuracy %
+
+---
+
+## 📊 Accuracy Formula
+
+```
+Accuracy (%) = (Correct Keystrokes / Total Keystrokes) × 100
+```
+
+---
+
+## 🚀 Future Improvements
+
+* 📈 Words Per Minute (WPM) calculation
+* 🎵 Sound feedback (correct/incorrect)
+* 📊 Performance analytics dashboard
+* 🧠 Adaptive difficulty (AI-based)
+* 👤 User authentication & progress tracking
+* 🌐 Deployment (Vercel / Netlify)
+
+---
+
+## 🌍 Live Demo
+
+👉 Add your deployed link here
+
+```
+https://anilnxtwaveproject3.vercel.app/
+```
+
+---
+
+
+## 👨‍💻 Author
+
+**Anil Kumaer**
+
+---
+
+
+
+
