@@ -97,7 +97,7 @@ src/
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/touch-typing-app.git
+git clone https://github.com/aniljiA1/anilnxtwaveproject3.git
 cd touch-typing-app
 ```
 
